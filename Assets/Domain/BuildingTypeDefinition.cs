@@ -38,7 +38,7 @@ namespace CityBuilder.Domain
 
         public BuildingLevelDefinition GetFirstLevel() => GetLevel(1);
 
-        public bool TryGetNextLevel(int currentLevel, out BuildingLevelDefinition? definition)
+        public bool TryGetNextLevel(int currentLevel, out BuildingLevelDefinition definition)
         {
             var nextLevel = currentLevel + 1;
             if (nextLevel > MaxLevel)

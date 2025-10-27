@@ -4,8 +4,8 @@ namespace CityBuilder.Presentation.View
 {
     public sealed class BuildingGhostView : MonoBehaviour
     {
-        private MeshRenderer? _renderer;
-        private Material? _material;
+        private MeshRenderer _renderer;
+        private Material _material;
 
         private void Awake()
         {

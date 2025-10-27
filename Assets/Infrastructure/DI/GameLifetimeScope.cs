@@ -20,10 +20,10 @@ namespace CityBuilder.Infrastructure.DI
     public sealed class GameLifetimeScope : LifetimeScope
     {
         [SerializeField]
-        private BuildingCatalogConfig? _catalogConfig;
+        private BuildingCatalogConfig _catalogConfig;
 
         [SerializeField]
-        private GameplaySettings? _gameplaySettings;
+        private GameplaySettings _gameplaySettings;
 
         /// <summary>
         /// Registers dependencies and services required for gameplay execution.

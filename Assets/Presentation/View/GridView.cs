@@ -8,10 +8,10 @@ namespace CityBuilder.Presentation.View
     {
         private int _width;
         private int _height;
-        private GameObject? _highlight;
-        private MeshRenderer? _highlightRenderer;
-        private Material? _gridMaterial;
-        private Material? _highlightMaterial;
+        private GameObject _highlight;
+        private MeshRenderer _highlightRenderer;
+        private Material _gridMaterial;
+        private Material _highlightMaterial;
 
         public void Initialize(int width, int height)
         {

@@ -8,7 +8,7 @@ namespace CityBuilder.Presentation.View
     [RequireComponent(typeof(BoxCollider))]
     public sealed class BuildingView : MonoBehaviour
     {
-        private MeshRenderer? _renderer;
+        private MeshRenderer _renderer;
         private Color _baseColor;
 
         public Guid BuildingId { get; private set; }

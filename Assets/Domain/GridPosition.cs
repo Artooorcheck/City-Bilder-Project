@@ -13,7 +13,7 @@ namespace CityBuilder.Domain
 
         public bool Equals(GridPosition other) => X == other.X && Y == other.Y;
 
-        public override bool Equals(object? obj) => obj is GridPosition other && Equals(other);
+        public override bool Equals(object obj) => obj is GridPosition other && Equals(other);
 
         public override int GetHashCode() => System.HashCode.Combine(X, Y);
 

@@ -34,14 +34,14 @@ namespace CityBuilder.Presentation.Presenters
         private LoadGameUseCase _loadGameUseCase;
         private GameplaySettings _gameplaySettings;
         private EconomyTickService _economyTickService;
-        private ISubscriber<BuildingPlacedEvent>? _buildingPlacedSubscriber;
-        private ISubscriber<BuildingRemovedEvent>? _buildingRemovedSubscriber;
-        private ISubscriber<BuildingMovedEvent>? _buildingMovedSubscriber;
-        private ISubscriber<BuildingUpgradedEvent>? _buildingUpgradedSubscriber;
-        private ISubscriber<EconomyChangedEvent>? _economyChangedSubscriber;
-        private ISubscriber<NotEnoughGoldEvent>? _notEnoughSubscriber;
-        private ISubscriber<GameSavedEvent>? _savedSubscriber;
-        private ISubscriber<GameLoadedEvent>? _loadedSubscriber;
+        private ISubscriber<BuildingPlacedEvent> _buildingPlacedSubscriber;
+        private ISubscriber<BuildingRemovedEvent> _buildingRemovedSubscriber;
+        private ISubscriber<BuildingMovedEvent> _buildingMovedSubscriber;
+        private ISubscriber<BuildingUpgradedEvent> _buildingUpgradedSubscriber;
+        private ISubscriber<EconomyChangedEvent> _economyChangedSubscriber;
+        private ISubscriber<NotEnoughGoldEvent> _notEnoughSubscriber;
+        private ISubscriber<GameSavedEvent> _savedSubscriber;
+        private ISubscriber<GameLoadedEvent> _loadedSubscriber;
 
         private GridView _gridView;
         private BuildingGhostView _ghostView;

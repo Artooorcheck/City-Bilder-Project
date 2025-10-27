@@ -31,7 +31,7 @@ namespace CityBuilder.Application.UseCases
             _economyChangedPublisher = economyChangedPublisher;
         }
 
-        public bool Execute(string buildingTypeId, GridPosition position, int rotation, out Building? building)
+        public bool Execute(string buildingTypeId, GridPosition position, int rotation, out Building building)
         {
             var definition = _catalog.GetById(buildingTypeId);
             var level = definition.GetFirstLevel();
