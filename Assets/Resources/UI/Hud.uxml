@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+  <ui:Style src="project://database/Assets/Resources/UI/Hud.uss?fileID=7433441132597879392&amp;guid=cb1f8bb8f56344b184f6b7a71f3b04f0&amp;type=3#Hud" />
+  <ui:VisualElement class="hud-root">
+    <ui:VisualElement class="resource-panel">
+      <ui:Label name="GoldLabel" class="resource-label" text="Gold: 0" />
+      <ui:Label name="IncomeLabel" class="resource-label" text="Income: +0/s" />
+    </ui:VisualElement>
+    <ui:VisualElement class="build-panel">
+      <ui:Label text="Build" class="panel-title" />
+      <ui:Button name="HouseButton" class="build-button" text="House (1)" />
+      <ui:Button name="FarmButton" class="build-button" text="Farm (2)" />
+      <ui:Button name="MineButton" class="build-button" text="Mine (3)" />
+    </ui:VisualElement>
+    <ui:VisualElement class="selection-panel">
+      <ui:Label name="SelectionTitle" class="panel-title" text="No building selected" />
+      <ui:Label name="SelectionLevel" class="selection-label" text="Level: -" />
+      <ui:Button name="UpgradeButton" class="action-button" text="Upgrade" />
+      <ui:Button name="MoveButton" class="action-button" text="Move" />
+      <ui:Button name="DeleteButton" class="action-button" text="Delete (Del)" />
+    </ui:VisualElement>
+    <ui:VisualElement class="notification-panel">
+      <ui:Label name="NotificationLabel" class="notification-label" text="" />
+      <ui:Button name="SaveButton" class="action-button" text="Save" />
+      <ui:Button name="LoadButton" class="action-button" text="Load" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

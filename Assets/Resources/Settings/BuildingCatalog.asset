@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d5ad3cf4f2c4e5d9295c71d5de8182d, type: 3}
+  m_Name: BuildingCatalog
+  m_EditorClassIdentifier: 
+  types:
+  - id: House
+    displayName: Cozy House
+    levels:
+    - level: 1
+      cost: 100
+      income: 2
+    - level: 2
+      cost: 150
+      income: 4
+  - id: Farm
+    displayName: Wheat Farm
+    levels:
+    - level: 1
+      cost: 120
+      income: 5
+    - level: 2
+      cost: 180
+      income: 9
+  - id: Mine
+    displayName: Gold Mine
+    levels:
+    - level: 1
+      cost: 200
+      income: 8
+    - level: 2
+      cost: 320
+      income: 16

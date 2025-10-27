@@ -1,0 +1,22 @@
+{
+    "name": "Presentation",
+    "rootNamespace": "CityBuilder.Presentation",
+    "references": [
+        "Application",
+        "Infrastructure",
+        "Unity.InputSystem",
+        "MessagePipe",
+        "UniTask",
+        "VContainer",
+        "Domain"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
