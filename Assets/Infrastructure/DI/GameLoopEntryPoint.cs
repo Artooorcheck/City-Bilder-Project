@@ -4,7 +4,7 @@ using VContainer.Unity;
 
 namespace CityBuilder.Infrastructure.DI
 {
-    public sealed class GameLoopEntryPoint : IStartable, IDisposable
+    public sealed class GameLoopEntryPoint : IDisposable
     {
         private readonly EconomyTickService _economyTickService;
         private readonly AutoSaveService _autoSaveService;
@@ -13,11 +13,6 @@ namespace CityBuilder.Infrastructure.DI
         {
             _economyTickService = economyTickService;
             _autoSaveService = autoSaveService;
-        }
-
-        public void Start()
-        {
-            // Services begin ticking upon construction.
         }
 
         public void Dispose()

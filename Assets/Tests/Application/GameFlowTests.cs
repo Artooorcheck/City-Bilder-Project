@@ -89,7 +89,7 @@ namespace CityBuilder.Tests.Application
 
         private sealed class InMemorySaveStorage : ISaveStorage
         {
-            private CitySaveData? _data;
+            private CitySaveData _data;
 
             public Task SaveAsync(CitySaveData data, CancellationToken cancellationToken)
             {
@@ -111,7 +111,7 @@ namespace CityBuilder.Tests.Application
                 return Task.CompletedTask;
             }
 
-            public Task<CitySaveData?> LoadAsync(CancellationToken cancellationToken)
+            public Task<CitySaveData> LoadAsync(CancellationToken cancellationToken)
             {
                 return Task.FromResult(_data);
             }

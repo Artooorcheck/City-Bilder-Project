@@ -94,6 +94,8 @@ namespace CityBuilder.Presentation.Presenters
             _notEnoughSubscriber = notEnoughSubscriber;
             _savedSubscriber = savedSubscriber;
             _loadedSubscriber = loadedSubscriber;
+
+            LoadGame();
         }
 
         public void Initialize(GridView gridView, BuildingGhostView ghostView, HudPresenter hudPresenter)
@@ -305,7 +307,8 @@ namespace CityBuilder.Presentation.Presenters
             }
             else if (mouseRight.wasPressedThisFrame)
             {
-                CancelModes();
+                CancelModes(); 
+                DeselectBuilding();
             }
         }
 
@@ -369,8 +372,6 @@ namespace CityBuilder.Presentation.Presenters
                     return;
                 }
             }
-
-            DeselectBuilding();
         }
 
         private void SelectBuilding(Guid buildingId)

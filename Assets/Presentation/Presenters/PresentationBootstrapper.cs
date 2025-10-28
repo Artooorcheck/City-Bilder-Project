@@ -7,7 +7,7 @@ namespace CityBuilder.Presentation.Presenters
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Initialize()
         {
-            if (Object.FindObjectOfType<PresentationRoot>() != null)
+            if (Object.FindAnyObjectByType<PresentationRoot>() != null)
             {
                 return;
             }

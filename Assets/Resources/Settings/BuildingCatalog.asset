@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   types:
   - id: House
-    displayName: Cozy House
+    displayName: House
     levels:
     - level: 1
       cost: 100
@@ -23,7 +23,7 @@ MonoBehaviour:
       cost: 150
       income: 4
   - id: Farm
-    displayName: Wheat Farm
+    displayName: Farm
     levels:
     - level: 1
       cost: 120

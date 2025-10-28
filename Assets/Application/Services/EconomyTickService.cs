@@ -22,7 +22,6 @@ namespace CityBuilder.Application.Services
             RunAsync().Forget();
         }
 
-        // <-- используем R3.IObservable, а не System.IObservable
         public Observable<int> IncomeStream => _incomeSubject.AsObservable();
 
         private async UniTaskVoid RunAsync()
@@ -40,7 +39,6 @@ namespace CityBuilder.Application.Services
             }
             catch (OperationCanceledException)
             {
-                // ignored
             }
         }
 

@@ -111,17 +111,17 @@ namespace CityBuilder.Presentation.Presenters
         {
             if (_houseButton != null)
             {
-                _houseButton.text = $"{house} (1)";
+                _houseButton.text = $"{house}";
             }
 
             if (_farmButton != null)
             {
-                _farmButton.text = $"{farm} (2)";
+                _farmButton.text = $"{farm}";
             }
 
             if (_mineButton != null)
             {
-                _mineButton.text = $"{mine} (3)";
+                _mineButton.text = $"{mine}";
             }
         }
 

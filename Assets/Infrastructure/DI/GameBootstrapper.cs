@@ -7,7 +7,7 @@ namespace CityBuilder.Infrastructure.DI
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Initialize()
         {
-            if (Object.FindObjectOfType<GameLifetimeScope>() != null)
+            if (Object.FindAnyObjectByType<GameLifetimeScope>() != null)
             {
                 return;
             }
